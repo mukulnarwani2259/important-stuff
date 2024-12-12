@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mukul
+  name: mukul
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mukul
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mukul
+    spec:
+      containers:
+      - image: nginx
+        name: mukul
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 500m
+          requests:
+            cpu: 210m
+    
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mukul
+  labels:
+    run: mukul
+spec:
+  ports:
+  - port: 80
+  selector:
+    run: mukul

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+       /* Reset */
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+       }
+       header {
+           background-color: #333;
+           color: white;
+           text-align: center;
+           padding: 20px;
+       }
+       header h1 {
+           font-size: 2rem;
+       }
+       .image-gallery {
+           display: grid;
+           grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+           gap: 15px;
+           padding: 20px;
+           width: 100%;
+           box-sizing: border-box;
+       }
+       .image-container {
+           background-color: #ddd;
+           overflow: hidden;
+           border-radius: 10px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+           height: 300px;
+       }
+       .image-container img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
+       footer {
+           background-color: #333;
+           color: white;
+           text-align: center;
+           padding: 10px;
+           position: relative;
+           bottom: 0;
+           width: 100%;
+       }
+       footer p {
+           font-size: 1rem;
+       }
+</style>
+</head>
+<body>
+<header>
+<h1>Image Gallery</h1>
+</header>
+<section class="image-gallery">
+<div class="image-container">
+<img src="https://i.pinimg.com/236x/00/f3/cb/00f3cb443515c43bbadb522e71fd3636.jpg" alt="Image 1">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/f6/fb/3b/f6fb3b526b001b4a42f059d3fcb18153.jpg" alt="Image 2">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/c5/2d/45/c52d454bf256841ea8934cd3d760d7b1.jpg" alt="Image 3">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/ce/68/2a/ce682a97579081bc5341b10b44ba5709.jpg" alt="Image 4">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/09/e4/ac/09e4acfe3778136b196f0202b45f49d5.jpg" alt="Image 5">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/ff/b8/e8/ffb8e8c94bf6210bf383e050520b00cf.jpg" alt="Image 6">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/e2/1d/e0/e21de0f4122d1926368bcd78cacd6ff6.jpg" alt="Image 7">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/1b/da/ca/1bdaca54b40441bc8a1bccc733e3ca43.jpg" alt="Image 8">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/04/3e/f8/043ef80ed6c4c1ad98be030f1c5afead.jpg" alt="Image 9">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/21/ba/b6/21bab60254b00dbe38029070f902b64d.jpg" alt="Image 10">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/89/e3/a6/89e3a6d7f56da5678a07a4973f06c44b.jpg" alt="Image 11">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/58/0f/c6/580fc655ac16c03f588a40209d70e51b.jpg" alt="Image 12">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/78/de/94/78de94b626f02f750cc09cb8d711cb5f.jpg" alt="Image 13">
+</div>
+<div class="image-container">
+<img src="https://m.media-amazon.com/images/I/61HDJagvRbL._AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Image 14">
+</div>
+<div class="image-container">
+<img src="https://m.media-amazon.com/images/I/71mmnCYKc3L._AC_SY550_.jpg" alt="Image 15">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/fc/8a/38/fc8a380eb3d6d4340d5f0c3a491b1d1f.jpg" alt="Image 16">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/236x/1e/54/af/1e54afeaa85c39ac3464a613b911e61e.jpg" alt="Image 17">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/5b/47/c9/5b47c93f1ca8e76d53f720ae1472950c.jpg" alt="Image 18">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/2e/a8/f9/2ea8f9ab591c7ced6f10d3c8bd13a5fe.jpg" alt="Image 19">
+</div>
+<div class="image-container">
+<img src="https://i.pinimg.com/736x/68/6a/5c/686a5c7966136d1949f8822f8a50c80c.jpg" alt="Image 20">
+</div>
+</section>
+<footer>
+<p>&copy; 2024 Image Gallery</p>
+</footer>
+</body>
+</html>

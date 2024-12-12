@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: mypod2
+  labels:
+    app: test
+spec:
+  nodeSelector:
+    disk: ssd
+  containers:
+   - name: mypod2
+     image: nginx

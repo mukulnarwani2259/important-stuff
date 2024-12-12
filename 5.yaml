@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mukul
+  name: mukul
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mukul
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mukul
+    spec:
+      containers:
+      - image: mukulnarwani2259/mukulimage:final
+        name: mukulimage
+        resources: {}
+status: {}
